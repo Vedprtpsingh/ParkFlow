@@ -2,56 +2,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Parking Management System</title>
+    <title>ParkFlow</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Top Bar -->
-    <div class="topbar">
-        <div class="topbar-contact">
-            <a href="mailto:info@parkflow.com"><i class="fas fa-envelope"></i> info@parkflow.com</a>
-            <a href="tel:+1234567890"><i class="fas fa-phone"></i> +123 456 7890</a>
-        </div>
-        <div class="topbar-auth">
-            <a href="login" class="login" name="login"><i class="fas fa-sign-in-alt"></i> Login</a>
-            <a href="signup" class="signup" name="signup"><i class="fas fa-user-plus"></i> Sign Up</a>
-        </div>
-    </div>
+    <%@ include file="topbar.jsp" %>
 
     <!-- Header/Navbar -->
-    <nav class="navbar">
-        <a href="/parkflow" class="logo">
-            <img src="/image/logo.jpeg" alt="ParkFlow Logo"> ParkFlow
-        </a>
-        <button class="nav-toggle" id="navToggle">
-            <i class="fas fa-bars"></i>
-        </button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="/parkflow" class="active"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="./addVehicle.jsp"><i class="fas fa-plus-circle"></i> Add Vehicle</a></li>
-            <li><a href="./parkVehicle.jsp"><i class="fas fa-parking"></i> Park Vehicle</a></li>
-            <li><a href="./viewParkedVehicles.jsp"><i class="fas fa-car"></i> View Vehicles</a></li>
-            <li class="dropdown">
-                <a href="#"><i class="fas fa-info-circle"></i> About <i class="fas fa-chevron-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="./about.jsp"><i class="fas fa-building"></i> About Us</a>
-                    <a href="./services.jsp"><i class="fas fa-concierge-bell"></i> Services</a>
-                    <a href="./contact.jsp"><i class="fas fa-envelope"></i> Contact Us</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+    <%@ include file="navbar.jsp" %>
 
     <!-- Main Content -->
     <div class="container">
         <!-- Hero section -->
         <div class="hero">
             <div class="hero-content">
-                <h2>Smart Parking Management System</h2>
+                <h2>Smart Parking and Traffic Detection System</h2>
                 <p>Efficiently manage your parking facility with our easy-to-use system</p>
-                <a href="./signup.jsp" class="btn btn-lg">Get Started <i class="fas fa-arrow-right"></i></a>
+                <a href="signup" class="btn btn-lg">Get Started <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
         
@@ -59,22 +29,22 @@
         <h1>Parking Management Solutions</h1>
         
         <div class="features-grid">
-            <a href="./addVehicle.jsp" class="feature-card">
+            <a href="./addVehicle" class="feature-card">
                 <i class="fas fa-plus-circle"></i>
                 <h3>Add Vehicle</h3>
                 <p>Register a new vehicle in the system</p>
             </a>
-            <a href="./parkVehicle.jsp" class="feature-card">
+            <a href="./parkVehicle" class="feature-card">
                 <i class="fas fa-parking"></i>
                 <h3>Park Vehicle</h3>
                 <p>Assign a parking slot to a vehicle</p>
             </a>
-            <a href="./viewParkedVehicles.jsp" class="feature-card">
+            <a href="./viewParkedVehicles" class="feature-card">
                 <i class="fas fa-car"></i>
                 <h3>View Vehicles</h3>
                 <p>See all currently parked vehicles</p>
             </a>
-            <a href="./services.jsp" class="feature-card">
+            <a href="./services" class="feature-card">
                 <i class="fas fa-cogs"></i>
                 <h3>Services</h3>
                 <p>Explore our range of parking services</p>
@@ -139,7 +109,7 @@
                 </div>
             </div>
             <div class="text-center mt-3">
-                <a href="./about.jsp" class="btn btn-secondary">Learn More About Us</a>
+                <a href="./about" class="btn btn-secondary">Learn More About Us</a>
             </div>
         </div>
         
@@ -180,78 +150,15 @@
                 <h2 style="color: white;">Ready to Transform Your Parking Management?</h2>
                 <p>Join hundreds of satisfied clients who have revolutionized their parking operations with ParkFlow.</p>
                 <div class="mt-3">
-                    <a href="./signup.jsp" class="btn" style="background-color: white; color: var(--primary);">Get Started</a>
-                    <a href="./contact.jsp" class="btn btn-outline" style="color: white; border-color: white;">Contact Sales</a>
+                    <a href="./signup" class="btn" style="background-color: white; color: var(--primary);">Get Started</a>
+                    <a href="./contact" class="btn btn-outline" style="color: white; border-color: white;">Contact Sales</a>
                 </div>
             </div>
         </div>
     </div>
     
-
-
-
-    <!-- Footer -->
-<footer>
-    <div class="footer-container">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h3>ParkFlow</h3>
-                <p>Smart solutions for modern parking management. Transforming the way you handle parking facilities with innovative technology.</p>
-                <div class="social-links mt-3">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="/parkflow"><i class="fas fa-chevron-right"></i> Home</a></li>
-                    <li><a href="./about.jsp"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                    <li><a href="./services.jsp"><i class="fas fa-chevron-right"></i> Services</a></li>
-                    <li><a href="./addVehicle.jsp"><i class="fas fa-chevron-right"></i> Add Vehicle</a></li>
-                    <li><a href="./parkVehicle.jsp"><i class="fas fa-chevron-right"></i> Park Vehicle</a></li>
-                    <li><a href="./viewParkedVehicles.jsp"><i class="fas fa-chevron-right"></i> View Vehicles</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Our Services</h3>
-                <ul class="footer-links">
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Vehicle Registration</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Parking Space Allocation</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Real-time Monitoring</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Reporting & Analytics</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Mobile Application</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Contact Us</h3>
-                <ul class="footer-contact">
-                    <li>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>123 Parking Street, Ghaziabad, India</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-phone"></i>
-                        <span>+123 456 7890</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-envelope"></i>
-                        <span>info@parkflow.com</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-clock"></i>
-                        <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 ParkFlow. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
+<!-- Footer -->
+<%@ include file="footer.jsp" %>
 
 
     <!-- JavaScript -->

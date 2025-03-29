@@ -11,22 +11,13 @@
 </head>
 <body>
     <!-- Topbar -->
-    <div class="topbar">
-        <div class="topbar-contact">
-            <a href="mailto:contact@yourapp.com"><i class="fas fa-envelope"></i> contact@yourapp.com</a>
-            <a href="tel:+1234567890"><i class="fas fa-phone"></i> +123 456 7890</a>
-        </div>
-        <div class="topbar-auth">
-            <a href="login" class="login"><i class="fas fa-sign-in-alt"></i> Login</a>
-            <a href="signup" class="signup"><i class="fas fa-user-plus"></i> Sign Up</a>
-        </div>
-    </div>
+    <%@ include file="topbar.jsp" %>
 
     <!-- Navbar -->
     <nav class="navbar">
         <a href="/" class="logo">
-            <img src="<c:url value='/images/logo.png'/>" alt="Your App Logo">
-            <span>Your App</span>
+            <img src="image/logo.jpeg" alt="ParkFlow Logo">
+            <span>ParkFlow</span>
         </a>
         <button class="nav-toggle" id="navToggle">
             <i class="fas fa-bars"></i>
@@ -126,52 +117,7 @@
     </div>
     
     <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>Your App</h3>
-                    <p>We provide innovative solutions to simplify your daily tasks and enhance productivity.</p>
-                    <div class="social-links mt-2">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="/"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="/features"><i class="fas fa-chevron-right"></i> Features</a></li>
-                        <li><a href="/about"><i class="fas fa-chevron-right"></i> About</a></li>
-                        <li><a href="/contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
-                        <li><a href="/privacy"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Contact Us</h3>
-                    <ul class="footer-contact">
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>123 Innovation Drive, Tech City, TC 12345</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <span>+123 456 7890</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <span>contact@yourapp.com</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Your App. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <%@ include file="footer.jsp" %>
 
     <script>
         // Navigation toggle
