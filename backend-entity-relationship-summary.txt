@@ -1,0 +1,40 @@
+Backend Entity and Relationship Summary for Parkflow Project
+
+1. User Entity:
+- Represents a user of the system.
+- Fields: id, firstName, lastName, email, password, phoneno, role.
+- The 'role' field distinguishes different types of users.
+- Users can have multiple bookings, payments, and vehicles associated with them.
+
+2. Booking Entity:
+- Represents a booking made by a user for a parking slot.
+- Fields: id, bookingTime.
+- Relationships:
+  - Many-to-One with User: Each booking is made by one user.
+  - Many-to-One with ParkingSlot: Each booking is for one parking slot.
+
+3. ParkingSlot Entity:
+- Represents a parking slot location.
+- Fields: id, numberOfSlots, latitude, longitude.
+- Parking slots can be booked by users through bookings.
+
+4. Payment Entity:
+- Represents a payment made by a user.
+- Fields: id, amount, paymentTime.
+- Relationship:
+  - Many-to-One with User: Each payment is made by one user.
+
+5. Vehicle Entity:
+- Represents a vehicle owned by a user.
+- Fields: id, licensePlate, model, color, parkedAt.
+- Relationship:
+  - Many-to-One with User (owner): Each vehicle belongs to one user.
+
+Entity Relationships Summary:
+- A User can have multiple Bookings, Payments, and Vehicles.
+- Each Booking links one User to one ParkingSlot at a specific booking time.
+- Each Payment is associated with one User.
+- Each Vehicle is owned by one User.
+- ParkingSlot is a standalone entity representing parking locations, referenced by Bookings.
+
+This structure forms the core backend data model for the Parkflow project, managing users, their vehicles, parking slot bookings, and payments.

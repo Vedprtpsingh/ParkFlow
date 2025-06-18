@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+#animation-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.scene {
+    display: none;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.scene.active {
+    display: block;
+}
+
+/* Scene 1: User Locates Parking */
+.phone-app {
+    display: inline-block;
+    background: #222;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    color: white;
+}
+
+.radar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #004400 0%, #001100 80%);
+    overflow: hidden;
+    box-shadow: 0 0 15px #0f0;
+}
+
+.radar-scan {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 255, 0, 0.3);
+    clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+    animation: radar-scan 2s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes radar-scan {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.parking-slot {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px #900;
+}
+
+.parking-slot.available {
+    background-color: green;
+    box-shadow: 0 0 10px #0f0;
+    animation: blink-green 1.5s infinite;
+}
+
+@keyframes blink-green {
+    0%, 100% {
+        box-shadow: 0 0 10px #0f0;
+    }
+    50% {
+        box-shadow: 0 0 20px #0f0;
+    }
+}
+
+/* Position slots in radar */
+#slot1 {
+    top: 40%;
+    left: 60%;
+}
+
+#slot2 {
+    top: 60%;
+    left: 40%;
+}
+
+#slot3 {
+    top: 30%;
+    left: 30%;
+}
+
+/* Scene 2: Car Approaches Entry Gate */
+.road {
+    position: relative;
+    width: 600px;
+    height: 150px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #666 0%, #444 100%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.car {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background: #007bff;
+    border-radius: 10px 10px 5px 5px;
+    top: 60px;
+    left: 0;
+    box-shadow: 0 0 10px #0056b3;
+}
+
+.barrier {
+    position: absolute;
+    width: 20px;
+    height: 80px;
+    background: #b22222;
+    top: 35px;
+    right: 100px;
+    border-radius: 5px;
+    transition: height 1s ease;
+}
+
+.barrier.closed {
+    height: 80px;
+}
+
+.barrier.open {
+    height: 10px;
+}
+
+/* Scene 3: Barrier Opens After Detection */
+#detection-message {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Scene 4: Car Navigates to Available Slot */
+.parking-lot {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    background: #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.parking-slot {
+    width: 80px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: red;
+    box-shadow: 0 0 5px #900;
+    position: relative;
+}
+
+.parking-slot.available {
+    background-color: green;
+    box-shadow: 0 0 10px #0f0;
+}
+
+#car-park {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background: #007bff;
+    border-radius: 10px 10px 5px 5px;
+    top: 140px;
+    left: 20px;
+    box-shadow: 0 0 10px #0056b3;
+}
+
+/* Scene 5: Backend Integration */
+.backend-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    background: #007bff;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    box-shadow: 0 0 15px #0056b3;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 15px #0056b3;
+    }
+    50% {
+        box-shadow: 0 0 30px #0056b3;
+    }
+}
+
+/* Scene 6: End Message */
+#scene6 p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 50px;
+}
