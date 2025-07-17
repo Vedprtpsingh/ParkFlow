@@ -78,7 +78,7 @@ Contributions are welcome! Please fork the repository, create a feature branch, 
 - [Ved Pratap Singh](https://github.com/vedprtpsingh)
 - [Thakur](https://github.com/thakur9044)
 - [Nitish Kumar](https://github.com/nitishgithubrit)
-- [Prajwal](https://github.com/prajwal12989)
+- [Prajwal](https://github.com/prajwaltripathi12)
 
 ## License
 This project is not currently licensed. Please contact the maintainer for more information.
