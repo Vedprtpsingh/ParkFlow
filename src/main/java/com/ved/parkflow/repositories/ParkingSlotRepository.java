@@ -5,5 +5,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ParkingSlotRepository extends JpaRepository<ParkingSlot, Integer> {
     ParkingSlot findByNumberOfSlots(int numberOfSlots);
-    ParkingSlot findBySlotNumber(String slotNumber);
 }

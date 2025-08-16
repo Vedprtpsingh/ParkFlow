@@ -31,9 +31,4 @@ logger.info("Parking slot saved: " + parkingSlot.getNumberOfSlots());
     public List<ParkingSlot> getAllParkingSlots() {
         return parkingSlotRepository.findAll();
     }
-
-    @Override
-    public ParkingSlot getParkingSlotBySlotNumber(String slotNumber) {
-        return parkingSlotRepository.findBySlotNumber(slotNumber);
-    }
 }

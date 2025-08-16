@@ -34,14 +34,6 @@
                 <div class="input-group">
                 <input type="hidden" name="role" value="business" />
                 <div class="input-group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" name="firstName" placeholder="First Name" required />
-                </div>
-                <div class="input-group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" name="lastName" placeholder="Last Name" required />
-                </div>
-                <div class="input-group">
                     <i class="fas fa-envelope"></i>
                     <input type="email" name="email" placeholder="Email Address" required />
                 </div>
