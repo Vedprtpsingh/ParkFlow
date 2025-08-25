@@ -1,4 +1,4 @@
-# ParkFlow - Smart Parking Management System
+# ParkFlow  = A Real-Time Detection System For Parking And Traffic Management
 
 <img src="src/main/webapp/image/logo.jpeg" alt="ParkFlow Logo" width="100" height="auto">
 
