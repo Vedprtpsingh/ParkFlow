@@ -435,9 +435,12 @@ java -jar target/parkflow-0.0.1-SNAPSHOT.jar
 
 ## 🎬 Live Demo & Screenshots
 
-### 📺 Video Demonstration
-[**Watch Full Demo Video**](https://rr3---sn-q4fl6nd7.googlevideo.com/videoplayback?expire=1755375335&ei=h5KgaIKfGeb8sfIPmZ_J2AQ&ip=23.26.71.205&id=o-ADjEQtpnetHgaQMP9TugYFs0XwkJTy_P5iEEH4VJQ8qb&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AY1jyLPQwSCBas1Lt0JBNxf7Zg_CdfElVcnp3RzcnXhEUH4VJQ8qb&vprv=1&svpuc=1&mime=video%2Fmp4&ns=Tfdr-iC3ZwyCqJib4hDh2goQ&rqh=1&gir=yes&clen=6816663&ratebypass=yes&dur=329.491&lmt=1755348200147931&lmw=1&fexp=24350590,24350737,24350827,24351316,24351318,24351528,24352156,24352220,24352559,24352568,24352574,24352697,24352699,24352882,24352884,24352961,24353150,51548755,51557447,51565116,51565682&c=TVHTML5&sefc=1&txp=6219224&n=AQ-pS1Xjaix2Fw&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIgOYWOjFymqfYN_cBICw9OfwqQADiVWH2mkqXP_aNNC4kCIQCTeix3BI8Q5vIJlB-Kj0fZoyXjyzcY5S_unVmkwMfapQ%3D%3D&rm=sn-pouxbg5-naje7s&rrc=79,80&req_id=c9afc95f09c5a3ee&cmsv=e&redirect_counter=2&cm2rm=sn-2imz7z&cms_redirect=yes&met=1755353754,&mh=Mv&mip=2001:4490:c89:71c6:1e6:b3b2:e1f:f62d&mm=34&mn=sn-q4fl6nd7&ms=ltu&mt=1755353322&mv=m&mvi=3&pl=47&rms=ltu,au&lsparams=met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhAO6r4YVUGkz5cKDXT5laoTvFE9bWZtbaTYAx2Xw7YxuXAiA9732iXW1hvrqVeb_--yxa2I4meDsK6JBTPVdXCko2vA%3D%3D)
+### 📱 Demo Video
 
+[![ParkFlow Demo](https://img.youtube.com/vi/Pu3jdpR6mBY/hqdefault.jpg
+)](https://www.youtube.com/embed/Pu3jdpR6mBY?si=crAv03RJdgPlGtO0)
+
+*Click to watch the complete system demonstration*
 ### 🏗️ System Flow Diagram
 
 ```
