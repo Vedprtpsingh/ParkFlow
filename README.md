@@ -164,7 +164,8 @@ Arduino Uno ──── HC-SR04 Sensor
 
 ### 📱 Demo Video
 
-[![ParkFlow Demo](https://img.youtube.com/vi/demo/maxresdefault.jpg)](https://www.youtube.com/embed/Pu3jdpR6mBY?si=crAv03RJdgPlGtO0)
+[![ParkFlow Demo]([https://img.youtube.com/vi/demo/maxresdefault.jpg](https://img.youtube.com/vi/Pu3jdpR6mBY/hqdefault.jpg
+))](https://www.youtube.com/embed/Pu3jdpR6mBY?si=crAv03RJdgPlGtO0)
 
 *Click to watch the complete system demonstration*
 
